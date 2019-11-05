@@ -1,6 +1,10 @@
+/* * {
+    border: 1px solid black !important;
+} */
 body {
     height: 100%;
     min-height: 100%;
+    width: 100%;
 }
 div {
     margin: 20px;
@@ -11,6 +15,33 @@ nav {
     min-width: 630px;
     position: relative;
     height: 60px;
+    top: 20px;
+}
+#result-nav {
+    min-width: 1041px;
+}
+.sub-nav {
+    position: relative;
+    top: 10px;
+    left: 142px;
+    margin-bottom: 28px;
+    min-width: 700px;
+    max-width: calc(100% - 162px);
+}
+#hr {
+    display: block;
+    position: relative;
+    border-top: 1px solid #cecece;
+    border-bottom: 0;
+    border-right : 0;
+    border-left: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    top: 13px;
+}
+.result {
+    margin: 0;
 }
 nav div {
     display: inline-block;
@@ -28,6 +59,55 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.search-results {
+    height: auto;
+    max-width: 700px;
+    position: relative;
+    left: 142px;
+    margin-top: 75px;
+}
+.search-results div {
+    margin: 0;
+    padding: 0 16px;
+}
+.result-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 27px !important;
+}
+.result-box div:nth-of-type(1) {
+    order: 2;
+}
+.result-box div:nth-of-type(2) {
+    order: 1;
+}
+.result-box div:nth-of-type(3) {
+    order: 3;
+    margin-top: 5px;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    color: #545454;
+}
+.result-box div:nth-of-type(1) a {
+    font-size: 16px;
+    padding-bottom: 1px;
+    line-height: 1.4;
+    color: #006621;
+    padding-left: 0;
+}
+.result-box div:nth-of-type(2) a {
+    color: #1a0dab;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    display: inline-block;
+    margin: 1px 0 2px 0;
+    padding: 0;
+}
+.result-box div:nth-of-type(2) a:hover {
+    text-decoration: underline;
 }
 a {
     padding-left: 15px;
@@ -67,7 +147,10 @@ img {
 #search-box {
     width: 584px;
     height: 44px;
+    padding-left: 20px;
+    font: 16px arial,sans-serif;
     border-radius: 30px;
+    border: 1px solid #cecece;
 }
 footer {
     display: inline-block;
@@ -76,6 +159,7 @@ footer {
     position: relative;
     height: 60px;
     background-color: #f2f2f2;
+    border-top: 1px solid #cecece;
 }
 footer div {
     display: inline-block;
